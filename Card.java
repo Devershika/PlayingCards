@@ -15,3 +15,11 @@ public class Card {
     public String getRank() {
         return rank;
     }
+
+    public void printCard() {
+        System.out.println(rank + " of " + suit);
+    }
+
+    public boolean sameSuit(Card other) {
+        return this.suit.equals(other.suit);
+    }
