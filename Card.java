@@ -23,3 +23,13 @@ public class Card {
     public boolean sameSuit(Card other) {
         return this.suit.equals(other.suit);
     }
+
+
+    public boolean sameRank(Card other) {
+        return this.rank.equals(other.rank);
+    }
+
+    public boolean equals(Card other) {
+        return this.suit.equals(other.suit) && this.rank.equals(other.rank);
+    }
+}
