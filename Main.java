@@ -35,3 +35,25 @@ public class Main {
                     deck.shuffleDeck();
                     System.out.println("Deck shuffled!");
                     break;
+                case 3:
+                    System.out.print("Enter card index (0-51): ");
+                    int index = scanner.nextInt();
+                    deck.printCard(index);
+                    break;
+                case 4:
+                    System.out.print("Enter suit: ");
+                    String suit = scanner.nextLine();
+                    System.out.print("Enter rank: ");
+                    String rank = scanner.nextLine();
+                    deck.findCard(suit, rank);
+                    break;
+                case 5:
+                    System.out.print("Enter suit: ");
+                    String suitName = scanner.nextLine();
+                    deck.sameCard(suitName);
+                    break;
+                case 6:
+                    System.out.print("Enter rank: ");
+                    String rankName = scanner.nextLine();
+                    deck.compareCard(rankName);
+                    break;
