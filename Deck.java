@@ -40,3 +40,32 @@ public class Deck {
             System.out.println("Invalid card index!");
         }
     }
+
+
+    public void sameCard(String suit) {
+        System.out.println("Cards from suit: " + suit);
+        for (Card card : deck) {
+            if (card.getSuit().equalsIgnoreCase(suit)) {
+                card.printCard();
+            }
+        }
+    }
+
+    public void compareCard(String rank) {
+        System.out.println("Cards with rank: " + rank);
+        for (Card card : deck) {
+            if (card.getRank().equalsIgnoreCase(rank)) {
+                card.printCard();
+            }
+        }
+    }
+
+    public void findCard(String suit, String rank) {
+        for (Card card : deck) {
+            if (card.getSuit().equalsIgnoreCase(suit) && card.getRank().equalsIgnoreCase(rank)) {
+                System.out.println("Card found: " + rank + " of " + suit);
+                return;
+            }
+        }
+        System.out.println("Card not found!");
+    }
