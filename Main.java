@@ -57,3 +57,17 @@ public class Main {
                     String rankName = scanner.nextLine();
                     deck.compareCard(rankName);
                     break;
+                case 7:
+                    deck.dealCard();
+                    break;
+                case 8:
+                    System.out.println("Exiting program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice! Try again.");
+            }
+        } while (choice != 8);
+
+        scanner.close();
+    }
+}
