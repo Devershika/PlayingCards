@@ -26,3 +26,12 @@ public class Main {
             choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
 
+
+            switch (choice) {
+                case 1:
+                    deck.displayDeck();
+                    break;
+                case 2:
+                    deck.shuffleDeck();
+                    System.out.println("Deck shuffled!");
+                    break;
